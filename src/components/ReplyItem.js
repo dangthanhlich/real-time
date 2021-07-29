@@ -27,18 +27,7 @@ const ReplyItem = ({ reply, commentId }) => {
   const postId = post.id;
   const { content, photoURL, displayName, createdAt, uid } = reply;
   const handleReplySubmit = (content) => {
-    // Test
-    // console.log(content);
     createOneReply({ content, postId, commentId });
-
-    // Create notification
-    // createOneNotification({
-    //   postId,
-    //   postSlugify: post.slugify,
-    //   receiverId: reply.uid,
-    //   type: "reply",
-    // });
-
     setOpenReplyForm(false);
   };
   return (
