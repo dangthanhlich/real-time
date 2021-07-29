@@ -1,0 +1,53 @@
+.post-list {
+  margin-top: 3rem;
+}
+.post-item {
+  background-color: var(--light-gray);
+  padding: 2rem 2.5rem 2.5rem 2.5rem;
+  border-radius: 3px;
+  margin-top: 1rem;
+}
+
+.post-item .post-image {
+  width: 100%;
+  display: block;
+  margin-top: 1rem;
+  object-fit: cover;
+}
+
+.avatar-edit-delete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatar-edit-delete .avatar {
+  margin-right: auto;
+}
+.avatar-edit-delete .avatar ~ a {
+  margin-left: 1rem;
+  display: inline-block;
+}
+.avatar-edit-delete a i {
+  color: var(--violet);
+}
+
+/* Time Commnet */
+.time-comment-like {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+.time-comment-like .time {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.time-comment-like .like {
+  font-size: 3rem;
+  margin-left: auto;
+}
+.time-comment-like i {
+  font-size: 3rem;
+  color: var(--pink);
+}

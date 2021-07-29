@@ -1,0 +1,6 @@
+.skeleton-container {
+  background-color: var(--light-gray);
+  padding: 2rem 2.5rem 2.5rem 2.5rem;
+  border-radius: 3px;
+  margin-top: 1rem;
+}

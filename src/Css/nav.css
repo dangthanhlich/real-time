@@ -1,0 +1,139 @@
+.header {
+  position: relative;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.header .logo {
+  transition: all 0.5s;
+}
+.header .logo:hover {
+  transform: scale(1.1);
+}
+
+nav {
+  background-color: var(--light-gray);
+  position: absolute;
+  top: 4rem;
+  right: 0px;
+  font-size: 1.4rem;
+  visibility: hidden;
+  opacity: 0;
+  padding: 1rem;
+  z-index: 5;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 3px;
+}
+.avatar-nav .avatar {
+  position: relative;
+  z-index: 10;
+  transition: all 0.4s;
+}
+
+.avatar-nav:hover > nav {
+  visibility: visible;
+  opacity: 1;
+}
+.avatar-nav:hover > img {
+  transform: scale(0.8);
+}
+nav ul li:not(:first-child) {
+  margin-top: 1.2rem;
+}
+nav ul li a,
+nav .signOut {
+  display: inline-block;
+  transition: all 0.5s;
+  padding: 1rem;
+  cursor: pointer;
+  width: 150px;
+}
+nav ul li a:hover,
+nav .signOut:hover {
+  background-color: var(--pink);
+  color: white;
+}
+
+/* nav-container */
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+.notification-container:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+.notification-icon {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.notification-icon i {
+  color: var(--light-gray);
+  font-size: 2.3rem;
+}
+.notification-icon .notification-number {
+  text-align: center;
+  color: var(--violet);
+  background-color: var(--pink);
+  font-size: 1.4rem;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -11px;
+  left: 34px;
+}
+
+.notification-list {
+  position: absolute;
+  z-index: 1000;
+  top: 39px;
+  left: -260px;
+  background-color: var(--light-gray);
+  width: 300px;
+  padding: 1rem;
+  border-radius: 3px;
+  visibility: hidden;
+  opacity: 0;
+  border: 1px solid rgb(221, 221, 221);
+}
+
+.notification-list.scroll {
+  height: 390px;
+  overflow: auto;
+}
+.notification-list a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  transition: all 0.3s;
+  border-radius: 3px;
+}
+.notification-list a.hasRead {
+  background-color: #eaeaea;
+}
+.notification-list li:not(:first-child) {
+  margin-top: 1.5rem;
+}
+.notification-list a .notification-content {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+}
+.notification-list a:hover {
+  background-color: var(--pink);
+  color: white;
+  transform: scale(1.03);
+}
